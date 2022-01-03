@@ -1,0 +1,42 @@
+
+<section class="header">
+    <nav>
+        <a href="app.component.html"><img src="assets/Images/logo.jpg"></a>
+        <div class="text-logo">
+            <h1>AMANDA TOUR & TRAVELS</h1>
+            <div class="text-logotext"><p>Let's plan the trip of your dreams. </p></div>
+        </div>
+        <div class="nav-links" id="navlinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">COMPANY</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="login.component.html">LOGIN</a></li>
+                <li><a href="ragister.component.html">SIGNUP</a></li>
+                    
+            </ul>   
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <hr>
+    <div class="text-body">
+        <h1>Explore your dream destination.</h1>
+        <p>Skip all the travel agents between us and book your ticket by one click!</p>
+        <a href="#" class="Book-btn">Book Your Tickt Now</a>
+
+    </div>
+    
+</section> 
+<!-----Toggle Menu----->
+<script>
+    var navlinks = document.getElementById("navlinks");
+    function showMenu(){
+        navlinks.style.right = "0";
+    }
+    function hideMenu(){
+        navlinks.style.right = "-200px";
+    }
+</script>
+
+
